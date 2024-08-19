@@ -1,0 +1,6 @@
+<div class="pokemon-grid">
+    <div *ngFor="let pokemon of pokemons" class="pokemon-card" (click)="openPokemonDetail(pokemon)">
+      <img [src]="pokemon.sprites.front_default" [alt]="pokemon.name">
+      <p>{{ pokemon.name | titlecase }}</p>
+    </div>
+  </div>
